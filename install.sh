@@ -13,7 +13,7 @@ ln -sf "$DOTFILES_DIR/tmux/.tmux.conf" "$HOME/.tmux.conf"
 echo "  tmux ........... OK"
 
 # ghostty
-GHOSTTY_DIR="$HOME/Library/Application Support/com.mitchellh.ghostty"
+GHOSTTY_DIR="$HOME/.config/ghostty"
 mkdir -p "$GHOSTTY_DIR"
 ln -sf "$DOTFILES_DIR/ghostty/config" "$GHOSTTY_DIR/config"
 echo "  ghostty ........ OK"
