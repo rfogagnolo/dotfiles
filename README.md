@@ -5,15 +5,23 @@ Configs pessoais para macOS.
 ## Conteudo
 
 - `ghostty/config` — configuracao do terminal Ghostty
-- `tmux/.tmux.conf` — configuracao do tmux (prefix Ctrl+A, mouse, true color)
+- `tmux/.tmux.conf` — tmux (prefix Ctrl+A, mouse, true color)
+- `starship/starship.toml` — prompt Starship com Catppuccin Mocha
+- `zsh/.zshrc` — shell config (starship, fzf, bat, lsd, tema auto)
 
 ## Instalacao
 
 ```bash
-git clone git@github.com:rfogagnolo/dotfiles.git ~/dotfiles
+# 1. Instalar dependencias
+brew install starship fzf lsd bat tmux
+
+# 2. Clonar e instalar
+git clone https://github.com/rfogagnolo/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 chmod +x install.sh
 ./install.sh
+
+# 3. Reiniciar o terminal
 ```
 
 O script cria symlinks dos configs para os locais corretos. Alteracoes feitas nos arquivos originais ja refletem no repo.
